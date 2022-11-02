@@ -1,5 +1,16 @@
 body {
-    background-color: #54A19D;
+    background-color: white;
+    font-family: 'Nunito';font-size: 20px;
+    /* background-color: #54A19D; */
+}
+
+footer {
+    font-size: 17px;
+}
+
+#support_section {
+    z-index: -1;
+    display: none;
 }
 
 .main-vh {
@@ -14,14 +25,23 @@ body {
     background-color: #FFC44C;
 }
 
+.bg-light-blue {
+    background-color: #54A19D; 
+}
+
 .nav-item {
     padding: 15px;
 }
 
 .desc{
-    margin-top: 100px;
-    width: 500px;
+    width: 80%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
+@media (min-width: 768px) {
+    #support_section {
+        position: absolute;
+        display: block;
+    }
+}
