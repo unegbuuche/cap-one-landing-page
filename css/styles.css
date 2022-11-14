@@ -8,15 +8,32 @@ footer {
     font-size: 17px;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li{
+    padding: 10px;
+}
+
 #support_section {
     z-index: -1;
     display: none;
 }
 
+#values-section {
+    min-height: 100vh;
+}
+
 #value-prop {
     position: relative;
-    background-image: url('../images/value-bg.png');
+    background-color: #FFC44C;
     width: 100%;
+}
+
+.center-block {
+    margin: 0 auto;
 }
 
 .cta-form {
@@ -28,7 +45,6 @@ footer {
     width: 100%;
     z-index: 1;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-vh {
@@ -86,6 +102,57 @@ footer {
     background-color: lightgray;
 }
 
+.vector-position {
+    top: 0;
+    left: 0;
+}
+
+.vector-line {
+    width: 2px;
+    background-color: black;
+    height: calc(100% - 45px);
+    left: 15px;
+    top: 37px;
+}
+
+.big-header {
+    font-size: 33px;
+    font-weight: bolder;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.small-header {
+    font-size: 16px;
+}
+
+.vision-div {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.value-sub-header {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 3px;
+}
+
+.join-btn {
+    width: 100px;
+    border: 0;
+    padding: 5px;
+    font-size: 17px;
+    float: right;
+}
+
 @media (min-width: 768px) {
     #support_section {
         position: absolute;
@@ -96,12 +163,20 @@ footer {
     .overlay {
         display: flex;
         justify-content: space-between;
-        height: 100vh;
+        min-height: 60vh;
         align-items: center;
     }
 
     .value-box {
         width: 25%;
+    }
+
+    .cta-block {
+        width: 70%;
+    }
+
+    .social-links {
+        width: 50%;
     }
     
 }
