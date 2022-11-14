@@ -17,27 +17,27 @@
 <body>
   <header class="w-100">
     <nav class="navbar navbar-expand-lg bg-dark-blue  w-100 px-5">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="150" alt="logo" /></a>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" height="55" width="130" alt="logo" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse mx-5 justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="#">Home</a>
+            <a class="nav-link text-white" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Features</a>
+            <a class="nav-link text-white" href="#value-prop">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Pricing</a>
+            <a class="nav-link text-white" href="#cta-section">Request</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <section class="container-fluid main-vh">
+    <section id="home" class="container-fluid main-vh">
       <div class="row">
         <div class="col-md-6 main-vh">
           <div class="desc">
@@ -48,12 +48,8 @@
               Find out the channels and content relevant to your audience
             </p>
             <div>
-              <button class="btn btn-black-border">
-                Request Demo
-              </button>
-              <button class="btn bg-yellow mx-4 margin-btn">
-                Try Now
-              </button>
+
+              <a href="#cta-section" class="btn bg-yellow mx-4 margin-btn">Try Now</a>
             </div>
           </div>
         </div>
@@ -68,23 +64,50 @@
         <div class="value-box">
           <img src="images/value1.png" alt="value 1" width="100%" />
           <div class="prop-divider"></div>
-          <p class="text-center">Value1</p>
+          <div class="text-center px-3 pt-1">
+            <h4 class="fw-bold">Target Market</h4>
+            <p>Find your target market that best suite your product.</p>
+          </div>
+          
         </div>
 
         <div class="value-box">
           <img src="images/value2.png" alt="value 1" width="100%" />
           <div class="prop-divider"></div>
-          <p class="text-center">Value2</p>
+          <div class="text-center px-3 pt-1">
+            <h4 class="fw-bold">Trending Content</h4>
+            <p>Show what contents are your target audience engaging with.</p>
+          </div>
         </div>
 
         <div class="value-box">
           <img src="images/value3.png" alt="value 1" width="100%" />
           <div class="prop-divider"></div>
-          <p class="text-center">Value3</p>
+          <div class="text-center px-3 pt-1">
+            <h4 class="fw-bold">Strategies</h4>
+            <p>Provide marketing strategies to increase sales.</p>
+          </div>
         </div>
       </div>
     </section>
     <div class="divider bg-dark-blue"></div>
+    <section id="cta-section" class="row">
+      <form class="w-75 mx-auto py-5 cta-form" action="https://formspree.io/f/mrgdrwly" method="post">
+        <div class="mb-3">
+          <label for="productName" class="form-label">Product</label>
+          <input type="text" name="Product" class="form-control" id="productName" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="productSector" class="form-label">Sector</label>
+          <input type="text" name="Sector" class="form-control" id="productSector" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input type="text" name="Price" class="form-control" id="price" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary align-items-sm-end">Submit</button>
+      </form>
+    </section>
   </main>
   <footer class="mt-5 text-center">
     All rights reserved.&nbsp;&#169;&nbsp;&nbsp; <span class="fw-bold">LinSight 2022.</span>
